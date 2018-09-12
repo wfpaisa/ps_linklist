@@ -188,6 +188,7 @@ class LinkBlockRepository
                         AND c.`id_cms_category` = {$category['id_cms_category']}
                         AND cl.`id_lang` = $id_lang
                         AND cs.`id_shop` = {$this->shop->id}
+                    ORDER BY c.`position` ASC	
                 ");
         }
 
